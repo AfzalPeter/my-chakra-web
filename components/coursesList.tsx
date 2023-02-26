@@ -11,6 +11,8 @@ import {
     HStack,
     useColorModeValue,
     Container,
+    Button,
+    
 } from '@chakra-ui/react';
 
 
@@ -22,11 +24,11 @@ const CoursesList = () => {
             <Heading textAlign={'center'} as="h1">Core Courses</Heading>
             <Box
                 marginTop={{ base: '1', sm: '5' }}
-                display={{md:'flex'}}
+                display={{ md: 'flex' }}
                 flexDirection={{ base: 'column', sm: 'row' }}
                 justifyContent="space-between">
                 <Box
-                    display={{md:"flex"}}
+                    display={{ md: "flex" }}
                     flex="1"
                     marginRight="3"
                     position="relative"
@@ -78,11 +80,51 @@ const CoursesList = () => {
                         fontSize="lg">
                         Every participant of the program will start by completing the following three core courses:
                     </Text>
-                    <Heading margin={'3'} color={'green.400'} fontSize={'xl'}>Quarter I (Core)</Heading>
+                    <Button
+                        as={'a'}
+                        colorScheme={'green'}
+                        bg={'green.400'}
+                        rounded={'full'}
+                        margin={'3'}
+                        href={'/quarterone'}
+                        w={'10rem'}
+                        _hover={{
+                            bg: 'green.500',
+                        }}>
+                        Quarter I (Core)
+                    </Button>
+                    {/* <Heading margin={'3'} color={'green.400'} fontSize={'xl'}>Quarter I (Core)</Heading> */}
                     <Text>CS-101: Object-Oriented Programming using TypeScript</Text>
-                    <Heading margin={'3'} color={'green.400'} fontSize={'xl'}>Quarter II (Core)</Heading>
+                    <Button
+                        as={'a'}
+                        colorScheme={'green'}
+                        bg={'green.400'}
+                        rounded={'full'}
+                        margin={'3'}
+                        href={'/quartertwo'}
+                        w={'10rem'}
+                        _hover={{
+                            bg: 'green.500',
+                        }}>
+                        Quarter II (Core)
+                    </Button>
+
                     <Text>W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform</Text>
-                    <Heading margin={'3'} color={'green.400'} fontSize={'xl'}>Quarter III (Core)</Heading>
+                    <Button
+                        as={'a'}
+                        colorScheme={'green'}
+                        bg={'green.400'}
+                        rounded={'full'}
+                        margin={'3'}
+                        
+                        href={'/quarterthree'}
+                        w={'10rem'}
+                        _hover={{
+                            bg: 'green.500',
+                        }}>
+                        Quarter III (Core)
+                    </Button>
+
                     <Text>$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development</Text>
 
 
@@ -97,8 +139,8 @@ const CoursesList = () => {
                 <Text padding='2' >After completing the first two quarters the participants will select one or more specializations consisting of two courses each:</Text>
             </Box>
 
-            <HStack display={{md:'flex'}} margin={{md:'4', sm:'1'}} spacing="2" align={'center'} padding={{md:'4', sm:'1'}}>
-                <Box margin={{md:'4', sm:'1'}}  borderRadius='xl' padding={{md:'4', sm:"1"}} w={{md:'30%', sm:'100%'}} height={'container.md'} bg='gray.100'>
+            <HStack display={{ md: 'flex' }} margin={{ md: '4', sm: '1' }} spacing="2" align={'center'} padding={{ md: '4', sm: '1' }}>
+                <Box margin={{ md: '4', sm: '1' }} borderRadius='xl' padding={{ md: '4', sm: "1" }} w={{ md: '30%', sm: '100%' }} height={'container.md'} bg='gray.100'>
                     <Image
                         borderRadius="lg"
                         src={
@@ -123,9 +165,23 @@ const CoursesList = () => {
                     <Text>
                         MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences
                     </Text>
+                    <Button
+                        as={'a'}
+                        colorScheme={'green'}
+                        bg={'green.400'}
+                        rounded={'full'}
+                        margin={'3'}
+                        href={'/web3mw'}
+                        w={'10rem'}
+                        _hover={{
+                            bg: 'green.500',
+                        }}>
+                        Apply Now
+                    </Button>
                 </Box>
 
-                <Box margin={{md:'4', sm:'1'}}  borderRadius='xl' padding={{md:'4', sm:"1"}} w={{md:'30%', sm:'100%'}} height={'container.md'} bg='gray.100'>
+
+                <Box margin={{ md: '4', sm: '1' }} borderRadius='xl' padding={{ md: '4', sm: "1" }} w={{ md: '30%', sm: '100%' }} height={'container.md'} bg='gray.100'>
                     <Image
                         borderRadius="lg"
                         src={
@@ -150,9 +206,23 @@ const CoursesList = () => {
                     <Text>
                         AI-361: Deep Learning and MLOps
                     </Text>
+                    <Button
+                        as={'a'}
+                        colorScheme={'green'}
+                        bg={'green.400'}
+                        rounded={'full'}
+                        margin={'3'}
+                        href={'/artificial'}
+                        w={'10rem'}
+                        _hover={{
+                            bg: 'green.500',
+                        }}>
+                        Apply Now
+                    </Button>
+
                 </Box>
 
-                <Box margin={{md:'4', sm:'1'}}  borderRadius='xl' padding={{md:'4', sm:"1"}} w={{md:'30%', sm:'100%'}} height={'container.md'} bg='gray.100'>
+                <Box margin={{ md: '4', sm: '1' }} borderRadius='xl' padding={{ md: '4', sm: "1" }} w={{ md: '30%', sm: '100%' }} height={'container.md'} bg='gray.100'>
                     <Image
                         borderRadius="lg"
                         src={
@@ -177,8 +247,23 @@ const CoursesList = () => {
                     <Text>
                         CN-361: Developing Multi-Cloud APIs using CDK for Terraform
                     </Text>
+                    <Button
+                        as={'a'}
+                        colorScheme={'green'}
+                        bg={'green.400'}
+                        rounded={'full'}
+                        margin={'3'}
+                        href={'/cloudnative'}
+                        w={'10rem'}
+                        _hover={{
+                            bg: 'green.500',
+                        }}>
+                        Apply Now
+                    </Button>
                 </Box>
             </HStack>
+
+
             <Box margin={'2'} textAlign='center'>
                 <Heading fontSize={'xl'} padding="3">
                     The Outcome for Participants of the Program
